@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+
+    <Header>
+
+      <Title>ipa</Title>
+      <Description>Code snippet for creating int list waiting for user input</Description>
+      <Author>Tseko Tsolov</Author>
+      <Shortcut>ipl</Shortcut>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+
+    </Header>
+
+    <Snippet>
+      
+      <Declarations>
+        <Literal >
+          <ID>name</ID>
+          <Tooltip>Name of the variable</Tooltip>
+          <Default>name</Default>
+        </Literal>
+      </Declarations>
+
+      <Code Language="CSharp">
+       
+        <![CDATA[var nums = Console.ReadLine()
+             .Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
+             .Select(int.Parse)
+             .ToList();]]>
+
+
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
